@@ -24,14 +24,7 @@ body {
     line-height: 25px;        /* From image_6.png */
     color: var(--primary-blue) !important;
 }
-
-/* 4. Button Styles */
-.btn-primary {
-    background-color: var(--accent-btn);
-    border-radius: 50px;      /* To make it rounded-pill */
-    padding: 10px 25px;
-    font-weight: 700;
-}.hero-section {
+.hero-section {
     position: relative;
     overflow: hidden; /* This is vital so the ellipse doesn't cause horizontal scrolling */
     background-color: #F3F8FF;
@@ -61,6 +54,13 @@ body {
     position: relative;
     z-index: 5; /* This pulls the text and buttons in front of the ellipse */
 }
+/* 4. Button Styles */
+.btn-primary {
+    background-color: var(--accent-btn);
+    border-radius: 50px;      /* To make it rounded-pill */
+    padding: 10px 25px;
+    font-weight: 700;
+}
 .hero-visual-container {
     min-height: 600px;
     position: relative;
@@ -75,7 +75,7 @@ body {
 .phone-left-corner {
     position: absolute;
     top: 15%;
-    left: 10%; 
+    left: 10%;
     max-height: 520px;
     z-index: 5;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2));
@@ -94,7 +94,8 @@ body {
 }
 
 .brand-logo {
-    height: 30px;
+    width: 130px;
+    height: 95px;
     filter: brightness(0); /* Makes logos look black/dark like the design */
     object-fit: contain;
 }
