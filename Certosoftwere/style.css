@@ -108,3 +108,50 @@ body {
     background: rgba(0,0,0,0.1);
     border-radius: 10px;
 }
+.about-certo-section {
+    width: 100%;
+    min-height: 664px; /* From image_22.png */
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    /* Adding the specific padding from Figma */
+    padding: 84px 132px; 
+}
+
+.container-custom {
+    max-width: 1176px; /* From image_23.png: Width Hug 1,176px */
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-text-content h2 {
+    color: #02033B;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.about-text-content p {
+    color: #02033B;
+    font-size: 1.1rem;
+    max-width: 480px;
+}
+
+/* Image styling from image_24.png */
+.about-image-wrapper {
+    width: 482.03px;
+    height: 482.03px;
+    border: 4px solid #FFC247; /* The yellow border in Figma */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: adds slight smoothness */
+}
+
+.about-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
