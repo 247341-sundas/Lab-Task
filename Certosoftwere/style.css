@@ -1,0 +1,34 @@
+/* style.css */
+
+/* 1. Variables at the top as requested by your sir */
+:root {
+    --primary-blue: #02033B;    /* Exact Hex from image_6.png */
+    --accent-btn: #4433FF;      /* The Sign-in button color */
+    --nav-font: 'Inter', sans-serif; /* Font from image_6.png */
+}
+
+/* 2. Global Styles */
+body {
+    font-family: var(--nav-font);
+    color: var(--primary-blue);
+}
+
+/* 3. Navbar Styles from image_6.png and image_10.png */
+.navbar {
+    min-height: 102px; /* Height from image_10.png */
+}
+
+.nav-link {
+    font-size: 19px;          /* From Typography section in image_6.png */
+    font-weight: 800;         /* "Extra Bold" from image_6.png */
+    line-height: 25px;        /* From image_6.png */
+    color: var(--primary-blue) !important;
+}
+
+/* 4. Button Styles */
+.btn-primary {
+    background-color: var(--accent-btn);
+    border-radius: 50px;      /* To make it rounded-pill */
+    padding: 10px 25px;
+    font-weight: 700;
+}
