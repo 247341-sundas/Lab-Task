@@ -80,3 +80,30 @@ body {
     z-index: 5;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2));
 }
+.testimonial-section {
+    background-color: #FFC247; /* Certo Yellow from image_4.png */
+    border-radius: 0 0 50px 50px; /* Optional: adds a curve to the bottom of the section */
+}
+
+.testimonial-section .card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.brand-logo {
+    height: 30px;
+    filter: brightness(0); /* Makes logos look black/dark like the design */
+    object-fit: contain;
+}
+
+/* Custom scrollbar for mobile horizontal scrolling */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
