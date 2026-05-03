@@ -32,3 +32,22 @@ body {
     padding: 10px 25px;
     font-weight: 700;
 }
+.hero-visual-container {
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/images/home-header-2.png.png');
+    background-size: cover;
+    background-position: center;
+    border-left: 8px solid #4433FF;
+}
+
+/* Positioning the Phone */
+.phone-left-corner {
+    position: absolute;
+    top: 15%;
+    left: 10%; 
+    max-height: 520px;
+    z-index: 5;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2));
+}
