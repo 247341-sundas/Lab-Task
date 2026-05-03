@@ -155,3 +155,61 @@ body {
 .w-fit-content {
     width: fit-content;
 }
+.freedom-section {
+    width: 100%;
+    min-height: 1202.5px; /* From image_22.png height */
+    padding: 84px 300px;  /* From image_22.png padding specs */
+    /* Linear Gradient from image_22.png: #F3F8FF to #E7EFFA */
+    background: linear-gradient(180deg, #F3F8FF 0%, #E7EFFA 100%);
+}
+
+.section-title {
+    color: #02033B;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.features-card {
+    width: 840px;           /* From image_23.png */
+    min-height: 872.5px;    /* From image_24.png */
+    background: #FFFFFF;
+    border-radius: 48px;    /* From image_24.png radius */
+    padding: 72px;          /* From image_25.png */
+    /* Drop Shadow from image_24.png: X:12, Y:12, Blur:20, 10% Opacity */
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item {
+    width: 200px;           /* From image_26.png */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;        /* From image_27.png */
+    font-weight: 800;       /* Extra Bold */
+    color: #02033B;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #434343;
+    line-height: 1.5;
+}
+
+/* Specific styling for the 'Easy to use' header highlight in Figma */
+.active-text {
+    color: #02033B;
+    border-bottom: 2px solid #FFC247; /* Optional visual cue for the selection in Figma */
+    display: inline-block;
+}
