@@ -31,6 +31,35 @@ body {
     border-radius: 50px;      /* To make it rounded-pill */
     padding: 10px 25px;
     font-weight: 700;
+}.hero-section {
+    position: relative;
+    overflow: hidden; /* This is vital so the ellipse doesn't cause horizontal scrolling */
+    background-color: #F3F8FF;
+    min-height: 708px;
+}
+
+.ellipse-2 {
+    position: absolute;
+    /* Dimensions from your Figma properties */
+    width: 1770px;
+    height: 1770px;
+    
+    /* Radial Gradient from white to light blue/grey */
+    background: radial-gradient(circle, #FFFFFF 0%, #E7EFFA 100%);
+    
+    /* Position it to create that specific curve across the screen */
+    top: -450px;
+    left: -700px; 
+    
+    border-radius: 50%;
+    z-index: 1; /* Lowest layer */
+    pointer-events: none; /* Crucial: allows clicking on buttons 'through' the ellipse */
+}
+
+/* Ensure your content is on a higher layer */
+.hero-content-container {
+    position: relative;
+    z-index: 5; /* This pulls the text and buttons in front of the ellipse */
 }
 .hero-visual-container {
     min-height: 600px;
