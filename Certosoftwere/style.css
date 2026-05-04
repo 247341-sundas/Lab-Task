@@ -197,6 +197,7 @@ body {
     font-size: 18px;        /* From image_27.png */
     font-weight: 800;       /* Extra Bold */
     color: #02033B;
+    text-align: center;
     line-height: 25px;
     margin-bottom: 12px;
 }
@@ -204,6 +205,7 @@ body {
 .feature-item p {
     font-size: 14px;
     color: #434343;
+    text-align: center;
     line-height: 1.5;
 }
 
@@ -212,4 +214,156 @@ body {
     color: #02033B;
     border-bottom: 2px solid #FFC247; /* Optional visual cue for the selection in Figma */
     display: inline-block;
+}
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 72px;
+  padding: 84px 264px;
+  background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.story-box {
+  flex: 1;
+  max-width: 912px;
+  height: 296px;
+  border-radius: 48px;
+  background: linear-gradient(135deg, #F7C95F, #FDB235);
+  color: #02033B;
+  padding: 36px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-box h2 {
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.story-box p {
+  margin-bottom: 20px;
+}
+
+.story-box .btn {
+  background-color: #4335DE;
+  color: #fff;
+  font-weight: 132.67px;
+  border-radius: 50px;
+  padding: 16px 44px 16px 20px;
+}
+
+.help-box {
+  flex: 1;
+  max-width: 308px;
+  height: 296px;
+  border-radius: 48px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.help-box h2 {
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #02033B;
+}
+
+.help-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.help-box .btn {
+  border: 2px solid #003366;
+  color: #003366;
+  font-weight: 132.67px;
+  border-radius: 50px;
+  padding: 16px 44px 16px;
+  background-color: transparent;
+}
+
+/* Layout Container */
+.info-section {
+  width: 100%;
+  padding: 80px 0; /* Vertical padding for the section */
+  display: flex;
+  justify-content: center;
+  background-color: #f9fbff; /* Light bluish background */
+}
+
+.container {
+  display: flex;
+  gap: 40px; /* Space between the two cards */
+  max-width: 1100px;
+  width: 90%;
+}
+
+/* Base Card Styling */
+.card {
+  flex: 1; /* Makes both cards equal width */
+  min-height: 380px; /* Estimated height */
+  border-radius: 40px; /* Smooth rounded corners */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  padding: 60px; /* Internal padding of the card */
+  box-sizing: border-box;
+}
+
+/* Specific Card Colors */
+.yellow-card {
+  background-color: #ffc233; /* The golden/yellow color */
+}
+
+.light-card {
+  background-color: transparent; /* Assuming it blends with section or is very light */
+}
+
+/* Typography */
+.card-content h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0d1b3e;
+}
+
+.card-content p {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #0d1b3e;
+  max-width: 300px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: 0.3s;
+}
+
+.btn-blue {
+  background-color: #3344ff;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #0d1b3e;
+  color: #0d1b3e;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
